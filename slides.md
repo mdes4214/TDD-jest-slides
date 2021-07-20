@@ -498,6 +498,12 @@ test('renders learn react link', () => {
 ### source code
 https://github.com/mdes4214/MERN-Simple
 
+---
+
+### jest-extended
+
+https://github.com/jest-community/jest-extended
+
 
 
 
