@@ -68,7 +68,7 @@ ymloe@tsmc.com
 
 ### TDD recap
 
----
+--
 
 1. write a failing test
 2. make the test pass
@@ -87,7 +87,7 @@ ymloe@tsmc.com
 - Testing is not a waste of time, it can reduce the cost of development.
 - Code against an Interface, not an Implement.
 
-<img width="650" data-src="img/tdd_2.png">
+<img width="650" src="img/tdd_2.png">
 
 ---
 
@@ -115,7 +115,7 @@ https://github.com/yubinTW/MERN-Simple
 
 ### backend
 
----
+--
 
 ### jest install
 
@@ -126,7 +126,7 @@ npm install -D jest ts-jest @types/jest
 - `ts-jest` - TypeScript preprocessor for jest
 - `@types/jest` - type definition for jest
 
----
+--
 
 ### test file
 
@@ -160,7 +160,7 @@ module.exports = {
 }
 ```
 
----
+--
 
 ### npm script
 
@@ -428,7 +428,7 @@ describe('API test', () => {
 
 ### frontend
 
----
+--
 
 ### npm script
 
@@ -449,7 +449,7 @@ npm run test
 ```
 ![](img/ft_test.png)
 
----
+--
 
 ### jest config
 
@@ -493,7 +493,10 @@ test('renders learn react link', () => {
 });
 ```
 
+---
 
+### source code
+https://github.com/mdes4214/MERN-Simple
 
 
 

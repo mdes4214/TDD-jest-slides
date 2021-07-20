@@ -263,10 +263,6 @@
 
 <body>
   
-<div id="logo" style="position: fixed; top: 20px; left: 20px; z-index: 1">
-    <img src="logo.png" />
-</div>
-
 
   <div class="reveal">
 
@@ -350,19 +346,14 @@ p {
 
 
     
+    <section>
         <section >
-            
             <h3><a id="user-content-tdd-recap" class="anchor" href="#tdd-recap" aria-hidden="true"></a>TDD recap</h3>
 
             </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <ol>
+        
+            <section >
+                <ol>
 <li>write a failing test</li>
 <li>make the test pass</li>
 <li>refactor</li>
@@ -382,7 +373,7 @@ p {
 <li>Testing is not a waste of time, it can reduce the cost of development.</li>
 <li>Code against an Interface, not an Implement.</li>
 </ul>
-<img width="650" data-src="img/tdd_2.png">
+<img width="650" src="img/tdd_2.png">
 
             </section>
         
@@ -433,19 +424,14 @@ p {
 
 
     
+    <section>
         <section >
-            
             <h3><a id="user-content-backend" class="anchor" href="#backend" aria-hidden="true"></a>backend</h3>
 
             </section>
-    
-
-
-
-    
-        <section >
-            
-            <h3><a id="user-content-jest-install" class="anchor" href="#jest-install" aria-hidden="true"></a>jest install</h3>
+        
+            <section >
+                <h3><a id="user-content-jest-install" class="anchor" href="#jest-install" aria-hidden="true"></a>jest install</h3>
 <pre><code class="language-bash">npm install -D jest ts-jest @types/jest
 </code></pre>
 <ul>
@@ -455,14 +441,9 @@ p {
 </ul>
 
             </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-test-file" class="anchor" href="#test-file" aria-hidden="true"></a>test file</h3>
+        
+            <section >
+                <h3><a id="user-content-test-file" class="anchor" href="#test-file" aria-hidden="true"></a>test file</h3>
 <ul>
 <li>*.spec.*, *.test.*</li>
 <li>js, jsx, ts, tsx, json, node</li>
@@ -494,16 +475,8 @@ p {
 
             </section>
         
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-npm-script" class="anchor" href="#npm-script" aria-hidden="true"></a>npm script</h3>
+            <section >
+                <h3><a id="user-content-npm-script" class="anchor" href="#npm-script" aria-hidden="true"></a>npm script</h3>
 <p><code>backend/package.json</code></p>
 <pre><code class="language-json=">&quot;scripts&quot;: {
   &quot;test&quot;: &quot;jest --watchAll --verbose --coverage&quot;,
@@ -801,19 +774,14 @@ describe('API test', () =&gt; {
 
 
     
+    <section>
         <section >
-            
             <h3><a id="user-content-frontend" class="anchor" href="#frontend" aria-hidden="true"></a>frontend</h3>
 
             </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-npm-script-1" class="anchor" href="#npm-script-1" aria-hidden="true"></a>npm script</h3>
+        
+            <section >
+                <h3><a id="user-content-npm-script-1" class="anchor" href="#npm-script-1" aria-hidden="true"></a>npm script</h3>
 <p><code>frontend/package.json</code></p>
 <pre><code class="language-json=">&quot;scripts&quot;: {
   &quot;start&quot;: &quot;react-scripts start&quot;,
@@ -832,16 +800,8 @@ describe('API test', () =&gt; {
 
             </section>
         
-
-    </section>
-    
-
-
-
-    
-    <section>
-        <section >
-            <h3><a id="user-content-jest-config-1" class="anchor" href="#jest-config-1" aria-hidden="true"></a>jest config</h3>
+            <section >
+                <h3><a id="user-content-jest-config-1" class="anchor" href="#jest-config-1" aria-hidden="true"></a>jest config</h3>
 <p>add <code>jest</code> block to <code>frontend/package.json</code></p>
 <pre><code class="language-json=">{
   {
@@ -887,6 +847,17 @@ test('renders learn react link', () =&gt; {
   expect(linkElement).toBeInTheDocument();
 });
 </code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3><a id="user-content-source-code" class="anchor" href="#source-code" aria-hidden="true"></a>source code</h3>
+<p><a href="https://github.com/mdes4214/MERN-Simple">https://github.com/mdes4214/MERN-Simple</a></p>
 
             </section>
     
