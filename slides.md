@@ -275,14 +275,14 @@ expect(1 + 2).not.toBe(4)
 
 --
 
-### Synchronize
+### Synchronous
 
 ```TypeScript=
 describe('Math test', () => {
     it('1 + 2 should be 3', () => {
         const a = 1
         const b = 2
-        expect(1 + 2).toBe(3)
+        expect(a + b).toBe(3)
     })
 })
 ```
