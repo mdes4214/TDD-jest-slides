@@ -157,6 +157,11 @@ module.exports = {
     "json",
     "node",
   ],
+  testTimeout: 20000,
+  testPathIgnorePatterns: [
+    "/node_modules/",
+    "/out/"
+  ]
 }
 ```
 
@@ -164,10 +169,12 @@ module.exports = {
 
 ### npm script
 
+https://jestjs.io/docs/cli
+
 `backend/package.json`
 ```json=
 "scripts": {
-  "test": "jest --watchAll --verbose --coverage",
+  "test": "jest --verbose --coverage --runInBand",
   "build": "tsc",
   "start": "node out/index.js"
 }
@@ -424,6 +431,22 @@ describe('API test', () => {
 
 ![](img/bk_test_2.png)
 
+--
+
+### Exercise
+
+Write a test case for the POST API `/cats`
+```TypeScript=
+// Hint: your request should contain a payload content
+{ 
+    method: 'POST', 
+    url: '/cats',
+    payload: {
+        name: catName
+    } 
+}
+``` 
+
 ---
 
 ### frontend
@@ -437,7 +460,7 @@ describe('API test', () => {
 "scripts": {
   "start": "react-scripts start",
   "build": "react-scripts build",
-  "test": "react-scripts test --coverage --watchAll=false",
+  "test": "react-scripts test --coverage --watchAll=false --runInBand",
   "eject": "react-scripts eject"
 }
 ```
