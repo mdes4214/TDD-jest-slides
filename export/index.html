@@ -322,9 +322,7 @@ p {
         <section >
             
             <p>Jack Lo</p>
-<p>TSID / NTAP</p>
 <p><img src="img/photo.png" alt=""></p>
-<p><a href="mailto:ymloe@tsmc.com">ymloe@tsmc.com</a></p>
 
             </section>
     
@@ -470,6 +468,11 @@ p {
     &quot;json&quot;,
     &quot;node&quot;,
   ],
+  testTimeout: 20000,
+  testPathIgnorePatterns: [
+    &quot;/node_modules/&quot;,
+    &quot;/out/&quot;
+  ]
 }
 </code></pre>
 
@@ -477,9 +480,10 @@ p {
         
             <section >
                 <h3><a id="user-content-npm-script" class="anchor" href="#npm-script" aria-hidden="true"></a>npm script</h3>
+<p><a href="https://jestjs.io/docs/cli">https://jestjs.io/docs/cli</a></p>
 <p><code>backend/package.json</code></p>
 <pre><code class="language-json=">&quot;scripts&quot;: {
-  &quot;test&quot;: &quot;jest --watchAll --verbose --coverage&quot;,
+  &quot;test&quot;: &quot;jest --verbose --coverage --runInBand&quot;,
   &quot;build&quot;: &quot;tsc&quot;,
   &quot;start&quot;: &quot;node out/index.js&quot;
 }
@@ -767,6 +771,21 @@ describe('API test', () =&gt; {
 
             </section>
         
+            <section >
+                <h3><a id="user-content-exercise" class="anchor" href="#exercise" aria-hidden="true"></a>Exercise</h3>
+<p>Write a test case for the POST API <code>/cats</code></p>
+<pre><code class="language-TypeScript=">// Hint: your request should contain a payload content
+{ 
+    method: 'POST', 
+    url: '/cats',
+    payload: {
+        name: catName
+    } 
+}
+</code></pre>
+
+            </section>
+        
 
     </section>
     
@@ -786,7 +805,7 @@ describe('API test', () =&gt; {
 <pre><code class="language-json=">&quot;scripts&quot;: {
   &quot;start&quot;: &quot;react-scripts start&quot;,
   &quot;build&quot;: &quot;react-scripts build&quot;,
-  &quot;test&quot;: &quot;react-scripts test --coverage --watchAll=false&quot;,
+  &quot;test&quot;: &quot;react-scripts test --coverage --watchAll=false --runInBand&quot;,
   &quot;eject&quot;: &quot;react-scripts eject&quot;
 }
 </code></pre>

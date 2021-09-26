@@ -51,11 +51,7 @@ p {
 
 Jack Lo
 
-TSID / NTAP
-
 ![](img/photo.png)
-
-ymloe@tsmc.com
 
 ---
 
